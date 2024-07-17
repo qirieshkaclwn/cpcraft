@@ -36,7 +36,7 @@ local function dropCobblestone() --выброс коблы
     end
 end
 for x = 1, x1 do
-    for y = 1, y1 do
+    for y = 1, y1/2 do
         turtle.forward()
         moveup()
         turtle.forward()
