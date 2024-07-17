@@ -46,7 +46,11 @@ for x = 1, x1 do
         moveup()
         turtle.forward()
         movedown()
-        dropCobblestone()  -- Assuming cobblestonedrop() is defined elsewhere
+        local arr=1
+        if arr%3==0 then
+            dropCobblestone()
+        end
+        -- Assuming cobblestonedrop() is defined elsewhere
     end
     if x %2==0 then
         turtle.forward()
