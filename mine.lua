@@ -36,8 +36,6 @@ local function dropCobblestone() --выброс коблы
             for _, value in ipairs(wit) do
                 if value ~= itemDetails then
                      d=d+1
-                else
-                    local d =d+0
                 end
             end
             if d>=1 then
