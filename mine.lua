@@ -33,7 +33,7 @@ local function dropCobblestone()
     local keepItems = {
         "minecraft:raw_iron", "minecraft:raw_gold", "minecraft:quartz",
         "minecraft:diamond", "minecraft:lapis_lazuli", "minecraft:coal",
-        "minecraft:ancient_debris", "create:ruw_zinc"
+        "minecraft:ancient_debris", "create:raw_zinc"
     }
 
     for slot = 1, 16 do
