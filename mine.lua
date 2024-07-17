@@ -4,7 +4,7 @@ write("v:")
 local v = tonumber(read())-1  -- Assuming v is the number of layers to dig down
 turtle.refuel(1000)
 local x1 = d  -- Assuming x1 is the width in the x-direction
-local y1 = d  -- Assuming y1 is the length in the y-direction
+local y1 = d/2  -- Assuming y1 is the length in the y-direction
 
 -- Function for moving down and digging blocks
 local function movedown()
@@ -36,7 +36,7 @@ local function dropCobblestone() --выброс коблы
     end
 end
 for x = 1, x1 do
-    for y = 1, (y1/2) do
+    for y = 1, y1 do
         turtle.forward()
         moveup()
         turtle.forward()
