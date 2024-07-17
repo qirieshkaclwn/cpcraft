@@ -1,7 +1,7 @@
 write("d:")
 local d = tonumber(read())  -- Assuming d is the distance to move forward
 write("v:")
-local v = tonumber(read())  -- Assuming v is the number of layers to dig down
+local v = tonumber(read())-1  -- Assuming v is the number of layers to dig down
 turtle.refuel(1000)
 local x1 = d  -- Assuming x1 is the width in the x-direction
 local y1 = d  -- Assuming y1 is the length in the y-direction
