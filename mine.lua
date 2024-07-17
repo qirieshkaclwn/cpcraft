@@ -46,14 +46,12 @@ for x = 1, x1 do
         turtle.forward()
         turtle.turnLeft()
         moveup()
-        turtle.forward()
         turtle.turnLeft()
         movedown()
     else
         turtle.forward()
         turtle.turnRight()
         moveup()
-        turtle.forward()
         turtle.turnRight()
         movedown()
     end
