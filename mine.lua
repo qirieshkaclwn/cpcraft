@@ -33,7 +33,7 @@ local function dropCobblestone() --выброс коблы
         local wit = {"minecraft:raw_iron", "minecraft:raw_gold","minecraft:quartz","minecraft:diamond","minecraft:lapis_lazuli","minecraft:coal","minecraft:ancient_debris"}
         if itemDetails then
             for _, value in ipairs(wit) do
-                if value == itemDetails then
+                if value ~= itemDetails then
                     turtle.drop() 
                 end
             end
