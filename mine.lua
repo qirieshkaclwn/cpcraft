@@ -40,13 +40,14 @@ local function dropCobblestone() --выброс коблы
         end
     end
 end
+local arr=1
 for x = 1, x1 do
     for y = 1, y1 do
         turtle.forward()
         moveup()
         turtle.forward()
         movedown()
-        local arr=1
+        arr=arr+1
         if arr%3==0 then
             dropCobblestone()
         end
