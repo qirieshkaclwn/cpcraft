@@ -30,7 +30,7 @@ local function dropCobblestone() --выброс коблы
         turtle.refuel(1000)
         turtle.select(slot)
         local itemDetails = turtle.getItemDetail()
-        if itemDetails and (itemDetails.name == "minecraft:cobblestone" or itemDetails.name == "minecraft:netherrack" or itemDetails.name == "minecraft:end_stone") then
+        if itemDetails and (itemDetails.name == "minecraft:cobblestone" or itemDetails.name == "minecraft:netherrack" or itemDetails.name == "minecraft:end_stone"or itemDetails.name =="minecraft:cobbled_deepslate") then
             turtle.drop() 
         end
     end
