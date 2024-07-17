@@ -39,6 +39,7 @@ local function dropCobblestone() --выброс коблы
                 else
                     local d =d+0
                 end
+            end
             if d>=1 then
                 turtle.drop()
             end
