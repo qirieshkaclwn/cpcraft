@@ -8,7 +8,6 @@ local y1 = d  -- Assuming y1 is the length in the y-direction
 
 -- Function for moving down and digging blocks
 local function movedown()
-    turtle.forward()
     for _ = 1, v do
         turtle.dig()
         turtle.digDown()
@@ -19,7 +18,6 @@ end
 
 -- Function for moving up and digging blocks
 local function moveup()
-    turtle.forward()
     for _ = 1, v do
         turtle.dig()
         turtle.digUp()
@@ -39,7 +37,9 @@ local function dropCobblestone() --выброс коблы
 end
 for x = 1, x1 do
     for y = 1, y1 do
+        turtle.forward()
         moveup()
+        turtle.forward()
         movedown()
         dropCobblestone()  -- Assuming cobblestonedrop() is defined elsewhere
     end
@@ -47,12 +47,14 @@ for x = 1, x1 do
         turtle.forward()
         turtle.turnLeft()
         moveup()
+        turtle.forward()
         turtle.turnLeft()
         movedown()
     else
         turtle.forward()
         turtle.turnRight()
         moveup()
+        turtle.forward()
         turtle.turnRight()
         movedown()
     end
