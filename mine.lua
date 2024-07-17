@@ -30,7 +30,7 @@ local function dropCobblestone() --выброс коблы
         turtle.refuel(1000)
         turtle.select(slot)
         local itemDetails = turtle.getItemDetail()
-        local wit = {"minecraft:raw_iron", "minecraft:raw_gold","minecraft:quartz","minecraft:diamond","minecraft:lapis_lazuli","minecraft:coal","minecraft:ancient_debris"}
+        local wit = {"minecraft:raw_iron", "minecraft:raw_gold","minecraft:quartz","minecraft:diamond","minecraft:lapis_lazuli","minecraft:coal","minecraft:ancient_debris","create:ruw_zinc"}
         if itemDetails then
             for _, value in ipairs(wit) do
                 if value ~= itemDetails then
