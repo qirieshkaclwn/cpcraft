@@ -31,7 +31,7 @@ local function dropCobblestone() --выброс коблы
     for slot = 1, 16 do
         turtle.select(slot)
         local itemDetails = turtle.getItemDetail()
-        if itemDetails and itemDetails.name == "minecraft:cobblestone" then
+        if itemDetails and (itemDetails.name == "minecraft:cobblestone" or itemDetails.name == "minecraft:netherrack") then
             turtle.drop() 
         end
     end
