@@ -29,6 +29,7 @@ local function moveup()
 end
 local function dropCobblestone() --выброс коблы
     for slot = 1, 16 do
+        turtle.refuel(1000)
         turtle.select(slot)
         local itemDetails = turtle.getItemDetail()
         if itemDetails and (itemDetails.name == "minecraft:cobblestone" or itemDetails.name == "minecraft:netherrack") then
