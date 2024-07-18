@@ -81,7 +81,7 @@ for z = 1, v do
             end
         end
     end
-    local l = yg - 1
+    local l = xg - 1
     for _ = 1, l do
         digAndMove()
     end
