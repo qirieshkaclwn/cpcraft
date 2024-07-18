@@ -1,6 +1,5 @@
-write("Distance (d): ")
-local x = 16
-local y =28
+local x1 = 16
+local y1 =28
 write("Layers (v): ")
 local v = tonumber(read())
 turtle.refuel(1000)
@@ -38,10 +37,10 @@ local function digAndMove()
     turtle.forward()
 end
 
-local y = (d / 2) + 1
+local y = (y1 / 2) + 1
 
 for z = 1, v do
-    for x = 1, d do
+    for x = 1, x1 do
         for n = 1, y do
             turtle.digUp()
             turtle.digDown()
@@ -80,7 +79,7 @@ for z = 1, v do
             end
         end
     end
-    local l = d - 1
+    local l = x - 1
     for _ = 1, l do
         digAndMove()
     end
