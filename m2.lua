@@ -52,7 +52,7 @@ for z = 1, v do
             end
         end
         if x % 2 == 0 then
-            if x ~= yg then
+            if x ~= xg then
                 turtle.turnRight()
                 turtle.digUp()
                 turtle.digDown()
@@ -62,7 +62,7 @@ for z = 1, v do
                 turtle.turnLeft()
             end
         else
-            if x ~= yg then
+            if x ~= xg then
                 turtle.turnLeft()
                 turtle.digUp()
                 turtle.digDown()
