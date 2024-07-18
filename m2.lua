@@ -1,5 +1,6 @@
 write("Distance (d): ")
-local d = tonumber(read())
+local x = 16
+local y =28
 write("Layers (v): ")
 local v = tonumber(read())
 turtle.refuel(1000)
