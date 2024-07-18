@@ -39,7 +39,7 @@ local function digAndMove()
     turtle.forward()
 end
 
-local y = (xg / 2) + 1
+local y = (yg / 2) + 1
 
 for z = 1, v do
     for x = 1, xg do
